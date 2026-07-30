@@ -110,18 +110,41 @@ section h3 {
 }
 
 .participants-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.participants-list li {
+.participant-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #c7d2fe;
   background-color: #eef2ff;
   color: #374151;
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.participant-chip:hover {
+  background-color: #e0e7ff;
+  transform: translateY(-1px);
+}
+
+.participant-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #c7d2fe;
+  color: #4338ca;
+  font-size: 0.95rem;
+  line-height: 1;
 }
 
 .participants-empty {
